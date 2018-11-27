@@ -46,6 +46,7 @@
   :hidden:
 
   authentication/authentication
+  lab_image_configuration/lab_image_configuration
   calm_enable/calm_enable
 
 .. toctree::
