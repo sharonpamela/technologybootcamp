@@ -113,6 +113,7 @@ What's New
     - AOS & PC 5.8.1
 
 - Optional Lab Updates:
+    - Files
     - Calm
     - Flow
 

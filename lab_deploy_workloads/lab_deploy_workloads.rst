@@ -96,6 +96,10 @@ Fill out the following fields and click **Save**:
 
 Click **Save** to create the VM.
 
+Now lets power on the VM:
+
+Select the VM, then click **Power On** from the **Actions** drop-down menu.
+
 Creating a Windows VM
 +++++++++++++++++++++
 
