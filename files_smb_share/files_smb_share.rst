@@ -61,6 +61,9 @@ Select the **SMB-Client-*intials* ** VM and click **Power on**.
 
 Log into the VM and add it to the **ntnxlab.local** domain.
 
+- **Username** - administrator@ntnxlab.local
+- **password** - nutanix/4u
+
 Connecting to SMB Share
 .......................
 
