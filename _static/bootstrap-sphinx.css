@@ -42,6 +42,13 @@ display: none;
 }*/
 
 /*
+* Adding for use to color objects in the RST files
+*/
+.red {
+            color: red;
+    }
+
+/*
  * Reset navbar styles from overrides in:
  * https://bitbucket.org/birkenfeld/sphinx/commits/78d8ebf76b630ab4073a7328af9d91e8123b8d96
  */
