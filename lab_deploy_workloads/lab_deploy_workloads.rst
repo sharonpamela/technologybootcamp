@@ -12,9 +12,9 @@ Learn about basic VM deployment.
 Creating a Linux VM
 +++++++++++++++++++
 
-Deploy a Linux VM from Prism Central.
+Deploy a Linux VM from Prism Element.
 
-In **Prism Central > Explore > VMs**, click **Create VM**.
+In **Prism Element > VM > Table**, click **+ Create VM**.
 
 Fill out the following fields and click **Save**:
 
@@ -26,18 +26,10 @@ Fill out the following fields and click **Save**:
 
 .. figure:: images/deploy_workloads_03.png
 
-- Select :fa:`pencil` next to CDROM
-    - **Operation** - Clone from Image Service
-    - **Image** - CentOS7-*initials* (The Image we added above)
-    - Select **Update**
-
-.. figure:: images/deploy_workloads_04.png
-
 - Select **+ Add New Disk**
     - **Type** - DISK
-    - **Operation** - Allocate on Storage Container
-    - **Storage Container** - Default Container
-    - **Size (GiB)** - 30 GiB
+    - **Operation** - Clone from Image Service
+    - **Image** - CentOS7.qcow2
     - Select **Add**
 
 - Select **Add New NIC**
@@ -46,20 +38,16 @@ Fill out the following fields and click **Save**:
 
 Click **Save** to create the VM.
 
-Now lets power on the VM:
-
-Select the VM, then click **Power On** from the **Actions** drop-down menu.
-
 Creating a Windows VM
 +++++++++++++++++++++
 
-Deploy a Windows VM from Prism Central.
+Deploy a Windows VM from Prism Element.
 
 .. note::
 
   Nutanix provides a set of guest tools and drivers comparable to VMware Tools. To install a Windows-based OS, the I/O drivers must be provided at install time. Nutanix provides a customized set of virtualized I/O drivers for Windows OS on AHV.
 
-In **Prism Central > Explore > VMs**, click **Create VM**.
+In **Prism Element > VM > Table**, click **+ Create VM**.
 
 Fill out the following fields and click **Save**:
 
@@ -70,7 +58,7 @@ Fill out the following fields and click **Save**:
 - **Memory** - 4 GiB
 - Select :fa:`pencil` next to CDROM
     - **Operation** - Clone from Image Service
-    - **Image** - Windows2012-*initials*
+    - **Image** - Windows2012R2.ISO
     - Select **Update**
 
 - Select **+ Add New Disk**
