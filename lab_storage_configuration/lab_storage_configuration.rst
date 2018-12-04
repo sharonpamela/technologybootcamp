@@ -19,7 +19,7 @@ Configure Storage Containers
 
 Let's use Prism Element to perform a basic container setup.
 
-In **Prism > Storage**, click **Storage**, click **Table**, then click **+ Storage Container**.
+In **Prism Element> Storage**, click **Storage**, click **Table**, then click **+ Storage Container**.
 
 Use the following specifications (with **Advance Settings**), and click **Save**:
 
