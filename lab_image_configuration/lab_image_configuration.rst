@@ -1,5 +1,5 @@
 .. _lab_image_configuration:
-.. role:: red
+
 
 -------------------------
 Lab - Image Configuration
@@ -29,7 +29,7 @@ Fill out the following fields and click **Upload File**:
 
 Next, fill out the following fields and click **Save**:
 
-- **Image Name** - :red: CentOS7-*initials*
+- **Image Name** - CentOS7-*initials*
 - **Image Type** - ISO
 - **Image Description** - (Optional) Add a description
 
