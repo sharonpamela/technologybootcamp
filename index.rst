@@ -1,4 +1,4 @@
-.. title:: Introduction to Nutanix AHV
+.. title:: Nutanix Technology Bootcamp
 
 .. toctree::
   :maxdepth: 2
@@ -47,7 +47,6 @@
 
   authentication/authentication
   lab_image_configuration/lab_image_configuration
-  calm_enable/calm_enable
 
 .. toctree::
   :maxdepth: 2
@@ -58,35 +57,6 @@
   files_deploy/files_deploy
   files_smb_share/files_smb_share
   files_nfs_export/files_nfs_export
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Optional Flow Lab
-  :name: _optional_flow_lab
-  :hidden:
-
-  what_is_flow/what_is_flow
-  flow_enable/flow_enable
-  flow_quarantine_vm/flow_quarantine_vm
-  flow_isolate_environments/flow_isolate_environments
-  flow_secure_app/flow_secure_app
-  flow_visualization/flow_visualization
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Optional Calm Lab
-  :name: _optional_calm_lab
-  :hidden:
-
-  what_is_calm/what_is_calm
-  calm_projects/calm_projects
-  calm_sshkey_creation/calm_sshkey_creation
-  calm_mysql_blueprint/calm_mysql_blueprint
-  calm_3twa_blueprint/calm_3twa_blueprint
-  calm_windows_blueprint/calm_windows_blueprint
-  calm_marketplace/calm_marketplace
-
-
 
 .. toctree::
   :maxdepth: 2
@@ -111,12 +81,10 @@ What's New
 ++++++++++
 
 - Workshop updated for the following software versions:
-    - AOS & PC 5.8.1
+    - AOS & PC 5.10.x
 
 - Optional Lab Updates:
     - Files
-    - Calm
-    - Flow
 
 Agenda
 ++++++
