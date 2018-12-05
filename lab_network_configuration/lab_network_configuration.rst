@@ -25,6 +25,7 @@ Virtual Networks
 - Physical switch port must be configured to trunk VLAN
 
 .. figure:: images/network_config_01.png
+.. figure:: images/network_config_001.png
 
 Virtual NICs
 ............

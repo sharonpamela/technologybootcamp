@@ -1,57 +1,72 @@
 .. title:: Nutanix Technology Bootcamp
+
 .. toctree::
   :maxdepth: 2
   :caption: Technology Overview
   :name: _technology_overview
   :hidden:
+  
   what_is_nutanix/what_is_nutanix
   nutanix_terminology/nutanix_terminology
+  
 .. toctree::
   :maxdepth: 2
   :caption: Nutanix Configuration Labs
   :name: _nutanix_configuration_labs
   :hidden:
+  
   lab_nutanix_tech_overview/lab_nutanix_tech_overview
   lab_storage_configuration/lab_storage_configuration
   lab_network_configuration/lab_network_configuration
+  
 .. toctree::
   :maxdepth: 2
   :caption: Deploying and Managing Workloads
   :name: _deploying_and_managing_workloads
   :hidden:
+  
   backup_and_dr/backup_and_dr
   lab_deploy_workloads/lab_deploy_workloads
   lab_manage_workloads/lab_manage_workloads
   lab_data_protection/lab_data_protection
+  
 .. toctree::
   :maxdepth: 2
   :caption: Monitoring and Managing the Environment
   :name: _monitoring_and_managing_the_environment
   :hidden:
+  
   monitoring_and_managing_env/monitoring_and_managing_env
   lab_monitoring_env/lab_monitoring_env
+  
 .. toctree::
   :maxdepth: 2
   :caption: Optional Labs
   :name: _optional_labs
   :hidden:
+  
   authentication/authentication
   lab_image_configuration/lab_image_configuration
+
 .. toctree::
   :maxdepth: 2
   :caption: Optional Files Labs
   :name: _optional_files_labs
   :hidden:
+
   files_deploy/files_deploy
   files_smb_share/files_smb_share
   files_nfs_export/files_nfs_export
+
 .. toctree::
   :maxdepth: 2
   :caption: Appendix
   :name: _appendix
   :hidden:
+  
   appendix/glossary
   appendix/basics
+  
 .. _getting_started:
 ---------------
 Getting Started
@@ -62,8 +77,10 @@ What's New
 ++++++++++
 - Workshop updated for the following software versions:
     - AOS & PC 5.10.x
+
 - Optional Lab Updates:
     - Files
+
 Agenda
 ++++++
 - Introductions
