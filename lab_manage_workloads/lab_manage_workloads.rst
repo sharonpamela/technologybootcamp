@@ -19,7 +19,7 @@ Power Actions and Console Access
 
 Explore VM power actions and console access.
 
-In **Prism Central > Explore > VMs**.
+In **Prism Element > VM > Table**.
 
 Locate the Linux VM you created in the previous lab (Linux_VM-*initials*). (Use Prism’s search function if necessary)
 
@@ -29,22 +29,15 @@ Locate the Linux VM you created in the previous lab (Linux_VM-*initials*). (Use 
 
 Now lets power on the VM:
 
-Select the VM, then click **Power On** from the **Actions** drop-down menu.
-
-.. note::
-
-  See the list of available actions (Update, Delete, Clone, Launch Console, Power On, Pause/Suspend, Snapshot, Migrate, and so on).
-  Note that Launch Console is shaded. This action is not available because the VM is off.
+Select the VM, then click **Power On**.
 
 Next lets open a console session:
 
-Select the VM, then click **Launch Console** from the **Actions** drop-down menu.
+Select the VM, then click **Launch Console**.
 
 .. note::
 
-  When the console window opens, note that there are three actions available in the console (Send CTRL-ALT-DEL, Take Screen Capture, and Power).
-
-  Power On in the Actions menu changes to Power Off once the VM has been powered on. You can also click on the name of the VM to open a console window for a specific VM. This console window contains all of the options available under the Actions menu, performance-related information, and other relevant VM details.
+  When the console window opens, note that there are four actions available in the console (Send Mount ISO, CTRL-ALT-DEL, Take Screen Capture, and Power).
 
 .. figure:: images/manage_workloads_01.png
 
@@ -53,7 +46,6 @@ Select the VM, then click **Launch Console** from the **Actions** drop-down menu
   In ESX:
 
   - The steps in this exercise could also be done from Prism while using an ESXi cluster that has its VMware vCenter instance is registered to Prism.
-  - The image below shows the side by side comparison of what the Actions drop down menu would look like for a VM hosted in ESXi versus one hosted in AHV.
 
   .. figure:: images/manage_workloads_06.png
 
@@ -84,38 +76,36 @@ In **Prism Central >** :fa:`search`.
 Clone a VM
 ..........
 
-In **Prism Central > Explore > VMs**.
+In **Prism Element > VM > Table**.
 
-Find and clone four copies of the CentOS-base virtual machine.
+Find and make two clones of the Linux-*initials* virtual machine you created earlier.
 
 Select the VM, then click **Clone** from the **Actions** drop-down menu.
 
 Fill out the following fields and click **Save**:
 
-- **Number of Clones** - 4
-- **Prefix Name**  - Flow-*initials*-Clone
+- **Number of Clones** - 2
+- **Prefix Name**  - Linux-*initials*-Clone
 - **Starting Index Number** - 1
 
 .. figure:: images/manage_workloads_02.png
 
-Leave them powered off as they are used in the optional Flow Lab.
+Leave them **Powered Off**.
 
 Migrate a VM Between Hosts
 ..........................
 
-In **Prism Central > Explore > VMs**.
+In **Prism Element > VM > Table**.
 
-Locate the Linux Vm from the previous lab (Linux_VM-*initials*).
+Locate the Linux VMs from the previous lab (Linux_VM-*initials*).
 
-- If the VM is powered on, power it Off
+- Use Search with the Initials you used.
 
 You should see that it has no entry in the **Host** column when it is powered off.
 
-Power on the VM, and make note of the **Hosts Name** in the **Host** column.
-
 .. figure:: images/manage_workloads_03.png
 
-Select the VM, then click **Migrate** from the **Actions** drop-down menu.
+Select the **Powered On** VM, then click **Migrate**.
 
 You can either choose one of the other hosts in the cluster as a migration target for the VM, or accept the default and let AHV automatically select a location.
 
@@ -128,37 +118,29 @@ When the task completes, verify that your VM host location has changed from the 
 Configure VM-to-Host Affinity Policies
 ......................................
 
-In **Prism Central > Explore > VMs**.
+In **Prism Element > VM > Table**.
 
-Locate the Linux Vm from the previous lab (Linux_VM-*initials*).
+Locate the Linux VMs from the previous lab (Linux_VM-*initials*).
 
-- If the VM is powered on, power it Off
+- Use Search with the Initials you used.
 
-Select the VM, then click **Configure VM Host Affinity** from the **Actions** drop-down menu.
+Select a **Powered OFF** VM, then click **Update** and **+ Set Affinity**.
 
-Select one **Host** to which the VM can have affinity, and click Save to finish.
+Select two **Hosts** to which the VM can have affinity, and click **Save** and **Save** to finish.
 
-Power On the VM, and verify it is on the **Host** you selected in the affinity policy.
+.. note:: We select more then one host so the VM has a place to migrate too in the event of a Node failure.
 
-Select the VM, then click **Migrate** from the **Actions** drop-down menu.
+Power On the VM, and verify it is on one of the **Hosts** you selected in the affinity policy.
 
-- This VM has host affinity set to host NTNXAHV-2. It cannot be migrated to any other host without setting the host affinity to that host.
+Select the VM, then click **Migrate**.
 
-Click **Cancel** to exit migration.
+You should see the following message:
 
-Select the VM, then click **Configure VM Host Affinity** from the **Actions** drop-down menu.
+- This VM has host affinity with 2 out of the 4 available hosts. It can only be migrated to those hosts.
 
-Select another **Host** to which the VM can have affinity, and click Save to finish.
-
-Select the VM, then click **Migrate** from the **Actions** drop-down menu.
-
-- There is now a drop-down menu displaying the available hosts.
-
-Either select a host manually or allow AHV to select it, then click **Migrate**.
+Click **Migrate**.
 
 You should see that the VM has moved to the other host.
-
-.. figure:: images/manage_workloads_05.png
 
 High Availability
 .................

@@ -9,62 +9,12 @@ Overview
 
 Learn about basic VM deployment.
 
-Image Configuration
-+++++++++++++++++++
-
-Nutanix's Image Service is where you can store your build ISOs, as well as Disk Images you create (similar to VMware Templates).
-
-We will upload CentOS ISO to use for deploying VMs.
-
-In **Prism Central > Explore**, click **Images**.
-
-Next click **Add Image**, and click **URL**.
-
-Fill out the following fields and click **Upload File**:
-
-- **Enter Image URL** - http://10.20.134.222/images/CentOS-7-x86_64-Minimal-1804.iso
-
-.. figure:: images/deploy_workloads_01.png
-
-Next, fill out the following fields and click **Save**:
-
-- **Image Name** - CentOS7-*initials*
-- **Image Type** - ISO
-- **Image Description** - (Optional) Add a description
-
-.. figure:: images/deploy_workloads_02.png
-
-.. note::
-  Image management in Prism Central allows you to upload images that can be used to deploy workloads in any of the clusters registered to that Prism Central instance.
-
-
-Now we will upload Windows 2012 ISO to use for deploying VMs, **if the cluster doesn't already have this image available**.
-
-Click **Add Image**, and click **URL**.
-
-Fill out the following fields and click **Upload File**:
-
-- **Enter Image URL** - http://10.20.134.222/images/server_2012_r2_vl_x64_dvd_3319595.iso
-
-Next, fill out the following fields and click **Save**:
-
-- **Image Name** - Windows2012-*initials*
-- **Image Type** - ISO
-- **Image Description** - (Optional) Add a description
-
-.. note::
-
-  Image management in Prism Central allows you to upload images that can be used to deploy workloads in any of the clusters registered to that Prism Central instance.
-  An image can also be uploaded directly from a cluster's Prism Element.
-  This tool can also convert VM disk images to formats that AHV can understand.
-  The image service supports raw, vhd, vhdx, vmdk, vdi, iso, and qcow2 disk formats.
-
 Creating a Linux VM
 +++++++++++++++++++
 
-Deploy a Linux VM from Prism Central.
+Deploy a Linux VM from Prism Element.
 
-In **Prism Central > Explore > VMs**, click **Create VM**.
+In **Prism Element > VM > Table**, click **+ Create VM**.
 
 Fill out the following fields and click **Save**:
 
@@ -76,18 +26,10 @@ Fill out the following fields and click **Save**:
 
 .. figure:: images/deploy_workloads_03.png
 
-- Select :fa:`pencil` next to CDROM
-    - **Operation** - Clone from Image Service
-    - **Image** - CentOS7-*initials* (The Image we added above)
-    - Select **Update**
-
-.. figure:: images/deploy_workloads_04.png
-
 - Select **+ Add New Disk**
     - **Type** - DISK
-    - **Operation** - Allocate on Storage Container
-    - **Storage Container** - Default Container
-    - **Size (GiB)** - 30 GiB
+    - **Operation** - Clone from Image Service
+    - **Image** - CentOS7.qcow2
     - Select **Add**
 
 - Select **Add New NIC**
@@ -99,13 +41,13 @@ Click **Save** to create the VM.
 Creating a Windows VM
 +++++++++++++++++++++
 
-Deploy a Windows VM from Prism Central.
+Deploy a Windows VM from Prism Element.
 
 .. note::
 
   Nutanix provides a set of guest tools and drivers comparable to VMware Tools. To install a Windows-based OS, the I/O drivers must be provided at install time. Nutanix provides a customized set of virtualized I/O drivers for Windows OS on AHV.
 
-In **Prism Central > Explore > VMs**, click **Create VM**.
+In **Prism Element > VM > Table**, click **+ Create VM**.
 
 Fill out the following fields and click **Save**:
 
@@ -116,7 +58,7 @@ Fill out the following fields and click **Save**:
 - **Memory** - 4 GiB
 - Select :fa:`pencil` next to CDROM
     - **Operation** - Clone from Image Service
-    - **Image** - Windows2012-*initials*
+    - **Image** - Windows2012R2.ISO
     - Select **Update**
 
 - Select **+ Add New Disk**

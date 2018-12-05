@@ -1,4 +1,4 @@
-.. title:: Introduction to Nutanix AHV
+.. title:: Nutanix Technology Bootcamp
 
 .. toctree::
   :maxdepth: 2
@@ -46,10 +46,17 @@
   :hidden:
 
   authentication/authentication
-  ssp/ssp
-  calm/calm
-  flow/flow
+  lab_image_configuration/lab_image_configuration
 
+.. toctree::
+  :maxdepth: 2
+  :caption: Optional Files Labs
+  :name: _optional_files_labs
+  :hidden:
+
+  files_deploy/files_deploy
+  files_smb_share/files_smb_share
+  files_nfs_export/files_nfs_export
 
 .. toctree::
   :maxdepth: 2
@@ -74,12 +81,10 @@ What's New
 ++++++++++
 
 - Workshop updated for the following software versions:
-    - AOS 5.6
-    - PC 5.7.1
+    - AOS & PC 5.10.x
 
 - Optional Lab Updates:
-    - Calm
-    - Flow
+    - Files
 
 Agenda
 ++++++

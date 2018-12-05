@@ -25,6 +25,7 @@ Virtual Networks
 - Physical switch port must be configured to trunk VLAN
 
 .. figure:: images/network_config_01.png
+.. figure:: images/network_config_001.png
 
 Virtual NICs
 ............
@@ -57,9 +58,9 @@ In this exercise, we intentionally use an invalid VLANs so no communication is p
 Setup user VM network
 .....................
 
-Connect to Prism Central and create a network for user VM interfaces. Use any VLAN other than 0, and do not enable IP address management.
+Connect to Prism Element and create a network for user VM interfaces. Use any VLAN other than 0, and do not enable IP address management.
 
-In **Prism Central > Explore**, click **VMs**, then click **Network Config**
+In **Prism Element > VM**, click **VMs**, then click **Network Config**
 
 Next click **VM Networks**, then click **+ Create Network**.
 
