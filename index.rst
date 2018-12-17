@@ -46,7 +46,6 @@
   :name: _optional_labs
   :hidden:
 
-  authentication/authentication
   lab_image_configuration/lab_image_configuration
 
 .. toctree::
