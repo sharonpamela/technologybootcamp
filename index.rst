@@ -32,6 +32,14 @@
 
 .. toctree::
   :maxdepth: 2
+  :caption: Security Compliance
+  :name: _security_compliance
+  :hidden:
+
+  lab_stig/lab_stig
+
+.. toctree::
+  :maxdepth: 2
   :caption:  Files Labs
   :name: _files_labs
   :hidden:
