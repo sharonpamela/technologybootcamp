@@ -34,6 +34,8 @@ When you open the PDF inventory of all the of the STIGs, you can see upwards of 
 AOS STIG Examples
 .................
 
+Example One:
+
 - **Group ID (Vulid)**: NTNX-51-000034
 - **Group Title**: SRG-OS-000364-GPOS-00151
 - **Rule ID**: NTNX-51-000034_rule
@@ -46,6 +48,7 @@ AOS STIG Examples
 - **Fix Text**: salt-call state.sls security/CVM/fdpermsownerCVM
 - **CCI**: CCI-001813
 
+Example Two:
 
 - **Group ID (Vulid)**: NTNX-51-000210
 - **Group Title**: SRG-OS-000096-GPOS-00050
