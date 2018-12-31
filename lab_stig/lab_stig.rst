@@ -34,43 +34,43 @@ When you open the PDF inventory of all the of the STIGs, you can see upwards of 
 AOS STIG Examples
 .................
 
-**Group ID (Vulid)**: NTNX-51-000034
-**Group Title**: SRG-OS-000364-GPOS-00151
-**Rule ID**: NTNX-51-000034_rule
-**Severity**: CAT II
-**Rule Version (STIG-ID)**: NTNX-51-000034
-**Rule Title**: The /etc/shadow file must be group-owned by root.
-**Vulnerability Discussion**: Failure to provide logical access restrictions associated with changes to system configuration may have significant effects on the overall security of the system. When dealing with access restrictions pertaining to change control, it should be noted that any changes to the hardware, software, and/or firmware components of the operating system can have significant effects on the overall security of the system. Accordingly, only qualified and authorized individuals should be allowed to obtain access to operating system components for the purposes of initiating changes, including upgrades and modifications. Logical access restrictions include, for example, controls that restrict access to workflow automation, media libraries, abstract layers (e.g., changes implemented into third-party interfaces rather than directly into information systems), and change windows (e.g., changes occur only during specified times, making unauthorized changes easy to discover). The /etc/shadow file must be group-owned by root. Verify the operating system enforces access restrictions. If it does not, this is a finding.
-**IAControls**: CM-5 (1)
-**Check Content**: salt-call state.sls security/CVM/fdpermsownerCVM
-**Fix Text**: salt-call state.sls security/CVM/fdpermsownerCVM
-**CCI**: CCI-001813
+- **Group ID (Vulid)**: NTNX-51-000034
+- **Group Title**: SRG-OS-000364-GPOS-00151
+- **Rule ID**: NTNX-51-000034_rule
+- **Severity**: CAT II
+- **Rule Version (STIG-ID)**: NTNX-51-000034
+- **Rule Title**: The /etc/shadow file must be group-owned by root.
+- **Vulnerability Discussion**: Failure to provide logical access restrictions associated with changes to system configuration may have significant effects on the overall security of the system. When dealing with access restrictions pertaining to change control, it should be noted that any changes to the hardware, software, and/or firmware components of the operating system can have significant effects on the overall security of the system. Accordingly, only qualified and authorized individuals should be allowed to obtain access to operating system components for the purposes of initiating changes, including upgrades and modifications. Logical access restrictions include, for example, controls that restrict access to workflow automation, media libraries, abstract layers (e.g., changes implemented into third-party interfaces rather than directly into information systems), and change windows (e.g., changes occur only during specified times, making unauthorized changes easy to discover). The /etc/shadow file must be group-owned by root. Verify the operating system enforces access restrictions. If it does not, this is a finding.
+- **IAControls**: CM-5 (1)
+- **Check Content**: salt-call state.sls security/CVM/fdpermsownerCVM
+- **Fix Text**: salt-call state.sls security/CVM/fdpermsownerCVM
+- **CCI**: CCI-001813
 
-**Group ID (Vulid)**: NTNX-51-000210
-**Group Title**: SRG-OS-000096-GPOS-00050
-**Rule ID**: NTNX-51-000210_rule
-**Severity**: CAT I
-**Rule Version (STIG-ID)**: NTNX-51-000210
-**Rule Title**: The operating system must have telnet-server uninstalled.
-**Vulnerability Discussion**: In order to prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling (i.e., embedding of data types within data types), organizations must disable or restrict unused or unnecessary physical and logical ports/protocols on information systems. Operating systems are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Additionally, it is sometimes convenient to provide multiple services from a single component (e.g., VPN and IPS); however, doing so increases risk over limiting the services provided by any one component. To support the requirements and principles of least functionality, the operating system must support the organizational requirements, providing only essential capabilities and limiting the use of ports, protocols, and/or services to only those required, authorized, and approved to conduct official business or to address authorized quality of life issues. The telnet-server package must not be installed. Verify the operating system is configured to prohibit or restrict the use of functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments. If it does not, this is a finding.
-**IAControls**: CM-7 b
-**Check Content**: salt-call state.sls security/CVM/packagesCVM
-**Fix Text**: salt-call state.sls security/CVM/packagesCVM CCI: CCI-000382
+- **Group ID (Vulid)**: NTNX-51-000210
+- **Group Title**: SRG-OS-000096-GPOS-00050
+- **Rule ID**: NTNX-51-000210_rule
+- **Severity**: CAT I
+- **Rule Version (STIG-ID)**: NTNX-51-000210
+- **Rule Title**: The operating system must have telnet-server uninstalled.
+- **Vulnerability Discussion**: In order to prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling (i.e., embedding of data types within data types), organizations must disable or restrict unused or unnecessary physical and logical ports/protocols on information systems. Operating systems are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Additionally, it is sometimes convenient to provide multiple services from a single component (e.g., VPN and IPS); however, doing so increases risk over limiting the services provided by any one component. To support the requirements and principles of least functionality, the operating system must support the organizational requirements, providing only essential capabilities and limiting the use of ports, protocols, and/or services to only those required, authorized, and approved to conduct official business or to address authorized quality of life issues. The telnet-server package must not be installed. Verify the operating system is configured to prohibit or restrict the use of functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments. If it does not, this is a finding.
+- **IAControls**: CM-7 b
+- **Check Content**: salt-call state.sls security/CVM/packagesCVM
+- **Fix Text**: salt-call state.sls security/CVM/packagesCVM CCI: CCI-000382
 
 AHV STIG Example
 ................
 
-**Group ID (Vulid)**: NTNX-AHV-50-000623
-**Group Title**: SRG-OS-000364-GPOS-00151
-**Rule ID**: NTNX-AHV-50-000623_rule
-**Severity**: CAT II
-**Rule Version (STIG-ID)**: NTNX-AHV-50-000623
-**Rule Title**: Cron and crontab directories must have permissions set to 0700.
-**Vulnerability Discussion**: Failure to provide logical access restrictions associated with changes to system configuration may have significant effects on the overall security of the system. When dealing with access restrictions pertaining to change control, it should be noted that any changes to the hardware, software, and/or firmware components of the operating system can have significant effects on the overall security of the system. Accordingly, only qualified and authorized individuals should be allowed to obtain access to operating system components for the purposes of initiating changes, including upgrades and modifications. Logical access restrictions include, for example, controls that restrict access to workflow automation, media libraries, abstract layers (e.g., changes implemented into third-party interfaces rather than directly into information systems), and change windows (e.g., changes occur only during specified times, making unauthorized changes easy to discover). Cron and crontab directories must have mode 0700. Verify the operating system enforces access restrictions. If it does not, this is a finding.
-**IAControls**: CM-5 (1)
-**Check Content**: salt-call state.sls security/KVM/cronKVM
-**Fix Text**: salt-call state.sls security/KVM/cronKVM
-**CCI**: CCI-001813
+- **Group ID (Vulid)**: NTNX-AHV-50-000623
+- **Group Title**: SRG-OS-000364-GPOS-00151
+- **Rule ID**: NTNX-AHV-50-000623_rule
+- **Severity**: CAT II
+- **Rule Version (STIG-ID)**: NTNX-AHV-50-000623
+- **Rule Title**: Cron and crontab directories must have permissions set to 0700.
+- **Vulnerability Discussion**: Failure to provide logical access restrictions associated with changes to system configuration may have significant effects on the overall security of the system. When dealing with access restrictions pertaining to change control, it should be noted that any changes to the hardware, software, and/or firmware components of the operating system can have significant effects on the overall security of the system. Accordingly, only qualified and authorized individuals should be allowed to obtain access to operating system components for the purposes of initiating changes, including upgrades and modifications. Logical access restrictions include, for example, controls that restrict access to workflow automation, media libraries, abstract layers (e.g., changes implemented into third-party interfaces rather than directly into information systems), and change windows (e.g., changes occur only during specified times, making unauthorized changes easy to discover). Cron and crontab directories must have mode 0700. Verify the operating system enforces access restrictions. If it does not, this is a finding.
+- **IAControls**: CM-5 (1)
+- **Check Content**: salt-call state.sls security/KVM/cronKVM
+- **Fix Text**: salt-call state.sls security/KVM/cronKVM
+- **CCI**: CCI-001813
 
 Running a STIG Report on Nutanix Controller VMs
 +++++++++++++++++++++++++++++++++++++++++++++++
@@ -214,9 +214,9 @@ Compromise the /etc/shadow file
 
 The following text was extracted from one of the security checks under the AOS STIGs:
 
-**Rule Version (STIG-ID)**: NTNX-51-000034
-**Rule Title**: The /etc/shadow file must be group-owned by root.
-**Fix Text**: salt-call state.sls security/CVM/fdpermsownerCVM
+- **Rule Version (STIG-ID)**: NTNX-51-000034
+- **Rule Title**: The /etc/shadow file must be group-owned by root.
+- **Fix Text**: salt-call state.sls security/CVM/fdpermsownerCVM
 
 Let’s elevate privileges to root to change the group ownership permissions of the /etc/shadow with the following commands:
 
