@@ -46,6 +46,7 @@ AOS STIG Examples
 - **Fix Text**: salt-call state.sls security/CVM/fdpermsownerCVM
 - **CCI**: CCI-001813
 
+
 - **Group ID (Vulid)**: NTNX-51-000210
 - **Group Title**: SRG-OS-000096-GPOS-00050
 - **Rule ID**: NTNX-51-000210_rule
