@@ -49,7 +49,7 @@ IP Address Management (IPAM)
 Configure Network
 +++++++++++++++++
 
-In this exercise, we intentionally use an invalid VLANs so no communication is possible from VMs placed on the network.
+In this exercise, we intentionally use invalid VLANs so no communication is possible from VMs placed on the network.
 
 .. note::
 

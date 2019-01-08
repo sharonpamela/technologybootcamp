@@ -45,7 +45,7 @@ Select the VM, then click **Launch Console**.
 
   In ESX:
 
-  - The steps in this exercise could also be done from Prism while using an ESXi cluster that has its VMware vCenter instance is registered to Prism.
+  - The steps in this exercise could also be done from Prism while using an ESXi cluster that has its VMware vCenter instance registered to Prism.
 
   .. figure:: images/manage_workloads_06.png
 
