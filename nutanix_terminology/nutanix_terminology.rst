@@ -277,3 +277,53 @@ Image service
     - ISO
 
 .. figure:: images/nutanix_terminology_19.png
+
+Managing the Environment
+++++++++++++++++++++++++
+
+One-Click Cluster Upgrade
+.........................
+
+What is it?
+
+- Automatically upgrade Nutanix software non-disruptively with no manual intervention
+- Automatically upgrade hypervisors non-disruptively with no manual intervention
+- Automatically upgrade firmware non-disruptively with no manual intervention
+
+Key Points:
+
+- Automatic sequencing of reboots
+- Done in minutes with zero touch
+- No downtime while upgrade happens
+- As easy as upgrading iOS
+
+.. figure:: images/monitoring_and_managing_01.png
+
+One-click Hypervisor Conversion
+...............................
+
+.. figure:: images/monitoring_and_managing_02.png
+
+Simple Cluster Expansions
+.........................
+
+Expand the cluster by adding nodes at any time with the ease of a few clicks.
+
+Can expand a cluster while it’s running.
+
+.. figure:: images/monitoring_and_managing_03.png
+
+Video Demonstration: Cluster Software Update
+............................................
+
+This demo shows how easy it is to upgrade a Nutanix cluster. Software upgrades are non-disruptive to the environment and can be performed at any time.
+
+Cluster Upgrade - https://youtu.be/_dzyaWbRkAQ
+
+
+Video Demonstration: Cluster Expansion
+.......................................
+
+This demo shows the ease with which a cluster could be expanded through the addition of one more node into the demo environment.
+
+Cluster Expansion - https://youtu.be/qg0vU48d5XA
